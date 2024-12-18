@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 20px;
+        font-family: Product Sans Medium;
+        line-height: 1.6;
+        background-color: #0f0f0f;
+        color: #f1f1f1;
+      }
+      .container {
+        border: 2px solid #f1f1f1;
+        background-color: #212121;
+        margin-bottom: 20px;
+        padding: 5px;
+        max-width: 1990px;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .short {
+        border: 1px solid red;
+        height: 50px;
+        width: 50px;
+      }
+      .title {
+        border: 1px solid red;
+        height: 50px;
+        width: 50px;
+        font-size: 40px;
+      }
+      .flex-container-scroll {
+        display: flex; /*align items from left to right*/
+        height: 542.328px;
+        /* width: 674px; */
+        gap: 20px;
+        padding: 10px;
+        margin-bottom: 20px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        max-width: 1990px;
+      }
+      .square {
+        /* flex: 210 373.328px; */
+        justify-content: space-between;
+        border-radius: 8px;
+        padding: 5px 15px;
+        display: flex;
+        scroll-snap-align: start;
+      }
+      video {
+        display: flex;
+        border-radius: 8px;
+        max-height: 542.328px;
+        max-width: 674px;
+        height: auto;
+        /* Maintain aspect ratio */
+      }
+      .flex-container-scroll::-webkit-scrollbar {
+        height: 5px;
+        /* width: 30px; */
+      }
+      .flex-container-scroll::-webkit-scrollbar-track {
+        background: #212121;
+        border-radius: 8px;
+      }
+      .flex-container-scroll::-webkit-scrollbar-thumb {
+        /* background: #e5e5e5; */
+        background: #212121;
+        border-radius: 8px;
+      }
+      .flex-container-scroll::-webkit-scrollbar-thumb:hover {
+        background: #e5e5e5;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <div class="short">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            focusable="false"
+            aria-hidden="true"
+            style="
+              pointer-events: none;
+              display: inherit;
+              width: 100%;
+              height: 100%;
+            "
+          >
+            <path
+              d="m19.45,3.88c1.12,1.82.48,4.15-1.42,5.22l-1.32.74.94.41c1.36.58,2.27,1.85,2.35,3.27.08,1.43-.68,2.77-1.97,3.49l-8,4.47c-1.91,1.06-4.35.46-5.48-1.35-1.12-1.82-.48-4.15,1.42-5.22l1.33-.74-.94-.41c-1.36-.58-2.27-1.85-2.35-3.27-.08-1.43.68-2.77,1.97-3.49l8-4.47c1.91-1.06,4.35-.46,5.48,1.35Z"
+              fill="#f03"
+            ></path>
+            <path d="m10,15l5-3-5-3v6Z" fill="#fff"></path>
+          </svg>
+        </div>
+        <h2 class="title">Shorts</h2>
+      </div>
+      <ul class="flex-container-scroll">
+        <li class="square">
+          <video
+            autoplay
+            loop
+            muted
+            controls
+            src="./Lamborghini Aventador SVJ Flyby  Blu Glauco.mp4"
+            aria-label="Lamborghini Aventador Flyby video"
+          ></video>
+        </li>
+        <li class="square">
+          <video
+            autoplay
+            loop
+            muted
+            controls
+            src="./Lamborghini Aventador SVJ Roadster.mp4"
+            aria-label="Lamborghini Aventador Flyby video"
+          ></video>
+        </li>
+        <li class="square">
+          <video
+            autoplay
+            loop
+            muted
+            controls
+            src="./MANSORY Lamborghini Aventador SVJ Roadster.mp4"
+            aria-label="Lamborghini Aventador Flyby video"
+          ></video>
+        </li>
+        <li class="square">
+          <video
+            autoplay
+            loop
+            muted
+            controls
+            src="./Our.mp4"
+            aria-label="Lamborghini Aventador Flyby video"
+          ></video>
+        </li>
+        <li class="square">
+          <video
+            autoplay
+            loop
+            muted
+            controls
+            src="./Lamborghini Aventador SVJ Flyby  Blu Glauco.mp4"
+            aria-label="Lamborghini Aventador Flyby video"
+          ></video>
+        </li>
+        <li class="square">
+          <video
+            autoplay
+            loop
+            muted
+            controls
+            src="./Lamborghini Aventador SVJ Roadster.mp4"
+            aria-label="Lamborghini Aventador Flyby video"
+          ></video>
+        </li>
+        <li class="square">
+          <video
+            autoplay
+            loop
+            muted
+            controls
+            src="./MANSORY Lamborghini Aventador SVJ Roadster.mp4"
+            aria-label="Lamborghini Aventador Flyby video"
+          ></video>
+        </li>
+        <li class="square">
+          <video
+            autoplay
+            loop
+            muted
+            controls
+            src="./Our.mp4"
+            aria-label="Lamborghini Aventador Flyby video"
+          ></video>
+        </li>
+        <li class="square">
+          <video
+            autoplay
+            loop
+            muted
+            controls
+            src="./Lamborghini Aventador SVJ Flyby  Blu Glauco.mp4"
+            aria-label="Lamborghini Aventador Flyby video"
+          ></video>
+        </li>
+        <li class="square">
+          <video
+            autoplay
+            loop
+            muted
+            controls
+            src="./Lamborghini Aventador SVJ Roadster.mp4"
+            aria-label="Lamborghini Aventador Flyby video"
+          ></video>
+        </li>
+        <li class="square">
+          <video
+            autoplay
+            loop
+            muted
+            controls
+            src="./MANSORY Lamborghini Aventador SVJ Roadster.mp4"
+            aria-label="Lamborghini Aventador Flyby video"
+          ></video>
+        </li>
+        <li class="square">
+          <video
+            autoplay
+            loop
+            muted
+            controls
+            src="./Our.mp4"
+            aria-label="Lamborghini Aventador Flyby video"
+          ></video>
+        </li>
+        <li class="square">
+          <video
+            autoplay
+            loop
+            muted
+            controls
+            src="./Lamborghini Aventador SVJ Flyby  Blu Glauco.mp4"
+            aria-label="Lamborghini Aventador Flyby video"
+          ></video>
+        </li>
+        <li class="square">
+          <video
+            autoplay
+            loop
+            muted
+            controls
+            src="./Lamborghini Aventador SVJ Roadster.mp4"
+            aria-label="Lamborghini Aventador Flyby video"
+          ></video>
+        </li>
+        <li class="square">
+          <video
+            autoplay
+            loop
+            muted
+            controls
+            src="./MANSORY Lamborghini Aventador SVJ Roadster.mp4"
+            aria-label="Lamborghini Aventador Flyby video"
+          ></video>
+        </li>
+        <li class="square">
+          <video
+            autoplay
+            loop
+            muted
+            controls
+            src="./Our.mp4"
+            aria-label="Lamborghini Aventador Flyby video"
+          ></video>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
