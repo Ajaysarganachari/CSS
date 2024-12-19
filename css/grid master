@@ -28,7 +28,7 @@
 
 .box {
     border: 2px solid black;
-    background-color: skyblue;
+    background-color: orangered;
 }
 .box:nth-child(even){
     background-color: white;
@@ -102,8 +102,8 @@
             class="grid-container"
             style="
               display: grid;
-              grid-template-columns: repeat(2,1fr);
-              grid-template-rows: repeat(2,100px);
+              grid-template-columns: repeat(1,2fr);
+              grid-template-rows: repeat(1,100px);
               gap: 10px;
             "
           >
@@ -119,14 +119,15 @@
                     class="grid-container"
                     style="
                       display: grid;
-                    grid-template-areas: '1 1 1 ' '2 2 1' '1 2 1';
+                    grid-template-areas: 'header header header  header' 'section section content content' 'footer footer foter footer';
+                    grid-template-rows: repeat(3,100px);
                       gap: 10px;
                     "
                   >
-                    <div class="box">1</div>
-                    <div class="box">2</div>
-                    <div class="box">3</div>
-                    <div class="box">4</div>
+                    <div class="box" style="grid-area: header"> header</div>
+                    <div class="box" style="grid-area: section">section</div>
+                    <div class="box" style="grid-area: content">content</div>
+                    <div class="box" style="grid-area: footer">footer</div>
                    
                     </div>
 
