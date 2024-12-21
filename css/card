@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet" />
+</head>
+<center>
+<style>
+    body {
+        box-sizing:border-box;
+        margin: 0;
+        padding: 0;
+        background-image:url(./e0672f56427115.59ae7aa14233f.jpg);
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        font-family: "open sans",serif;
+    }
+    .container {
+        border:4px solid;
+        background-image:linear-gradient(35deg,skyblue,black);
+        justify-content: center;
+        border-radius:8px;
+        background-color:#000000;
+        width: 250px;
+        height: 350px;
+        overflow: hidden;
+        background:linear-gradient(210deg,skyblue,black);
+    }
+    .img {
+        background-color: aliceblue;
+        border-radius: inherit;
+        width: 100%;
+        height: 50%;
+        overflow: hidden;
+      }
+      .img img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+      .text {
+        /* display: flex; */
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        color: aliceblue;
+        height: 30%;
+      }
+      .btn {
+        display: flex; /* Use Flexbox */
+        justify-content: center;
+        flex-direction: row; /* Stack links vertically */
+        gap: 10px; /* Space between links */
+      }
+      .btn a {
+        border: 3px solid transparent;
+        padding: 10px;
+        background-color: skyblue;
+        color: #ffffff;
+        border-radius: 8px;
+        text-decoration: none;
+        font-size: 10px;
+        display: flex;
+        gap: 15px;
+      }
+      .btnborder {
+        border: 3px solid transparent;
+        border-image: linear-gradient(to right, skyblue,white);
+      }
+   
+</style>
+</center>
+<body>
+    <div class="container">
+        <div class="img">
+            <img src="./wp9323354.webp" alt="" srcset=""/>
+        </div>
+        <div class="text">
+            <h5>
+                Royal Enfield Bullet
+                The Royal Enfield Bullet was an overhead valve, single-cylinder, four-stroke motorcycle initially made by Royal Enfield in Redditch.
+            </h5>
+        </div>
+        <div class="btn">
+            <a href="#" class="btnborder">ADD TO CART</a>
+        <a href="#" class="btnborder">BUY NOW</a>
+        </div>
+    </div>
+    
+</body>
+</html>
